@@ -5,9 +5,6 @@
     align-items: center; 
 }
 
-.backBleu{
-    background-color: #032252;
-}
 
 .backGris{
     background-color: #deebff;
@@ -16,6 +13,16 @@
 .bordureNone{
     border: none;
 }
+.colorLogoBlue{
+    background-color: rgb(4, 44, 70)
+}
+.colorLogoOrange{
+    background-color: rgb(186, 105, 50);
+}
+.colorLogoBeige{
+    background-color: rgb(239, 238, 220);
+}
+
 
 
 /* head */
@@ -25,30 +32,89 @@
 
 /*body*/
 body{
+    /*height: 1000px;*/
     margin :0;  
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 56px;
+    flex-direction: column;
+    display: flex;
+    
 }
+/* I : header*/
+
+
+header{
+    background-color:rgb(4, 44, 70);
+    position: fixed;
+    width:100%;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+header img{
+    width: 100px;
+}
+
+header>*{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 30px 0 30px;
+}
+
+header>ul{
+    right: 0;
+    text-decoration: none;
+}
+
+header, header a{
+    color: rgb(195, 153, 84);
+    text-decoration: none;
+}
+
+header>ul li div {
+    height: 3px;
+    background-color: rgb(195, 153, 84);
+    width: 0%;
+    transition: 1s;
+
+}
+li:hover>div{
+    width: 100%;
+
+}
+
+header>ul li {
+    margin: 10px;
+    font-weight: 600;
+    display: inline-block;
+    list-style: none;
+    transition: background-color 0.5s ease-in-out;
+} 
+
+
+
+/* II : Partie Recherche*/
 
 .PartieRecherche{
-    background-image: url("img/background2.png");
-    height:400px;
+    background-image: url("img/soutienscola2.jpg");
+    height:600px;
     width:100%;
+    flex: 1 0 auto;
 }
 
-/*titre1*/
+
+
+/*barre de recherche*/
 
 .flexBlockquote{
     align-items: center;
     display: flex;
     margin: 60px;
+    color : rgb(4, 44, 70)
 }
-
-.titre1{
-    color:#ececec;
-    
-}
-
-/*barre de recherche*/
-
 .paddingSearch{
     padding-left: 20px;
 }
@@ -67,7 +133,7 @@ body{
     height: 50px;
     width: 260px;
     font-size: 18px;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
 
 }
@@ -83,4 +149,142 @@ body{
     color: white;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
+}
+/* III : soutien*/
+
+.soutien{
+    padding-top: 5%;
+}
+
+.titresoutien{
+    font-family:Calibri;
+    font-size: 35px;
+    font-weight: bolder;
+    color:rgb(4, 44, 70);
+}
+
+.image-soutien>img{
+    width: 50%;
+}
+
+.ensembleSoutien{
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0 50px;
+}
+
+.listeSoutien{
+    font-size: 20px;
+ 
+}
+
+
+
+/*stage vacance*/
+
+.titrestage{
+    font-size: 30px;
+    color:rgb(4, 44, 70);
+}
+
+
+.contenu-stage{
+    
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0 50px;
+    
+}
+.textestage{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+}
+
+
+
+/* footer */
+
+footer{
+
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    width: 100%;
+    background: #f1f1f1;
+    color: #000000;
+    
+
+}
+footer>div img{
+    width: 150px;
+
+}
+
+.contenu-footer{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 15px;
+    padding: 50px 0 100px;
+}
+
+.bloc{
+    width: 15%;
+    margin: 0 30px;
+
+}
+
+/*CONTACT*/
+
+.footer-adresse h3,
+.footer-contact h3,
+.footer-nous h3,
+.footer-réseaux h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+    
+}
+
+
+.listeNous p{
+    
+    margin-left: -25%;
+
+
+}
+
+/*Réseaux*/
+
+.listeAdresse,
+.listeContact,
+.listeNous,
+.listeRéseaux {
+    list-style-type: none;
+}
+.listeAdresse>li,
+.listeContact>li,
+.listeNous>p,
+.listeRéseaux>li {
+    font-weight:600 ;
+}
+
+.listeRéseaux a {
+    text-decoration: none;
+    color: #333;
+}
+.listeRéseaux a:hover{
+    color: rgb(3,3,3);
+}
+
+.listeRéseaux img{
+    width: 20px;
 }
