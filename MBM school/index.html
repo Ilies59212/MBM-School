@@ -5,33 +5,43 @@
     <script src="https://kit.fontawesome.com/1fa2f623af.js" crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
     <title>MABOUM SCHOOL</title>
 
     <style>
-        #backGrisFonce{
-            color: rgb(255, 255, 255);
-            text-shadow: 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252;
+        #colorTexteTitre1{
+            
+            color : rgb(4, 44, 70);
+            text-shadow: 1px 1px 2px #ffffff;/* 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252, 0 0 2px #032252;
+       */ }
+        #listeHeader{
+            right: 0;
+            text-decoration: none;
         }
+        
     </style>
 
 </head>
 <body>
     <header>
-        <a href="./index.html"><img src="img/logo.png" alt="logo"></a>
-        <a href="/">Mon site</a>
-        <ul>
-            <li><a href="#acceuil">Acceuil</a></li>
-            <li><a href="#a-propos">A propos</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#inscription">Inscription</a></li>
-            <li><a href="#connexion">Connexion</a></li>
+        <a href="./index.html"><img src="img/logo3.jpg" alt="logo"></a>
+        <ul id="listeHeader">
+            <li ><a href="#inscription">Inscription</a>
+                 <div></div>
+            </li>
+            <li><a href="#connexion" id="connexion">Connexion</a>
+                <div></div>
+            </li>
         </ul>
     </header>
     <section class="PartieRecherche">
-        <div class="titre1" Align=Left><blockquote>
-         <h1 id="backGrisFonce" style="font-size: 50px" ><font face="trebuchet ms"><br>Vous avez des lacunes dans une matière ? <br> Nous sommes la pour vous ! 
+        <div class="" Align=Left><blockquote>
+         <h1 id="colorTexteTitre1" style="font-size: 50px" ><font face="trebuchet ms"><br>Vous avez des lacunes dans une matière ? <br> Nous sommes la pour vous ! 
          </blockquote></h1>
-         <h3 id="backGrisFonce"><blockquote>Choississez la matière pour des cours particuliers et programmez votre rendez-vous.
+         <h3 id="colorTexteTitre1"><blockquote>Choississez la matière pour des cours particuliers et programmez votre rendez-vous.
         </font></blockquote></h3>
         </div>
 
@@ -43,12 +53,107 @@
             <div><font face="trebuchet ms">
                 <input type="search" class="recherche flexCenter bordureNone paddingSearch"
                   placeholder="Chercher une matière: Physique, Maths..." /></font> </div>
-            <div class="backBleu flexCenter buttonSearch" style="font-size: 18px"><font face="trebuchet ms">Rechercher</font></div>
+            <div class="colorLogoBlue flexCenter buttonSearch" style="font-size: 18px"><font face="trebuchet ms">Rechercher</font></div>
         
                
         </div>
 
     </section>
 
+    <section class="soutien">
+        <div>
+            <div class="titresoutien flexCenter">
+                <h1>Comment marchent les cours de soutiens ?</h1>
+            </div>
+            <div class="contenu-soutien">
+                <h3 class="">Rien de plus simple ! </h3>
+                <div class="ensembleSoutien">
+                    <div class="listeSoutien">
+                        <li>Connectez-vous sur votre compte Maboum School (ou créer-le si ce n'est pas déjà fait)</li> <br>
+                        <li>Cherchez dans la barre de recherche la matière que vous désirez approfondir</li> <br>
+                        <li>Séléctionnez un campus</li> <br>
+                        <li>Choississez le(ou les) horaire(s) disponible(s) qui vous convient. </li> 
+                    </div>
+                    <div class="image-soutien">
+                        <img src="./img/image-soutien2.jpg">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <section class="StageVacance">  
+        <div class="titrestage flexCenter">
+            <h1>Nos stages de vacances scolaires</h1>
+        </div>
+        <div class="couleurback">  
+            <div class="contenu-stage">
+                <div class="textestage">
+                <p>Chez Maboum School, l’avenir de votre enfant nous préoccupe.
+                À chaque vacances scolaires, nos professeurs de l’Éducation Nationale organisent des stages pour permettre à votre enfant 
+                de se remettre à niveau, de ne pas perdre le rythme de l’école, combler les lacunes mais aussi de s’avancer sur ses devoirs.</p>
+                </div>
+                <div class="image-stage">
+                    <img src="./img/photostage.jpg">
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <footer>
+        
+        
+        <div class="contenu-footer">
+            <div class="bloc footer-image">
+                <a href="./index.html"><img src="img/logo.png" alt="logo"></a> -->
+            </div>
+
+            <div class="bloc footer-nous">
+             <h3>QUI SOMMES NOUS</h3>
+                <ul class="ListeNous">
+                    <p>Maboum School est un centre de formation présent Lille / Valenciennes / Hazebrouck / Tourcoing / Roubaix</p>
+                </ul>
+            </div>
+        
+            <div class="bloc footer-contact">
+                <ul class="ListeContact">
+                    <h3>CONTACT</h3>
+                    <li>☎️: 06 22 11 89 32</li></i><br>
+                    <li>📧: direction.pedagogique@<br>maboum-school.fr</li>
+                    
+                    
+               </ul>
+            </div>
+
+            <div class="bloc footer-adresse">
+                <ul class="ListeAdresse">
+                    <h3>NOS CAMPUS</h3>
+                    <li>LILLE : 15 rue Jaquemars Giélé</li><br>
+                    <li>VALENCIENNES : 84 rue de Paris</li><br>
+                    <li>ROUBAIX : 69 rue Jules Watteeuw</li><br>
+                    <li>TOURCOING : 25 rue de Lille</li><br>
+                    <li>HAZEBROUCK : 50 rue de la clef</li>
+                </ul>
+            </div>
+        
+            <div class="bloc footer-réseaux">
+                <ul class="ListeRéseaux">
+                    <h3>NOS RESEAUX</h3>
+                    <li> <a href="https://www.facebook.com/maboumschool"><img src="./img/facebook.webp">Facebook</a></li><br>
+                    <li><a href="https://www.instagram.com/maboumschool/"><img src="./img/instagram.png">Instagram</a></li> <br>
+                    <li><a href="https://www.linkedin.com/company/maboum-school/"><img src="./img/linkedin.png"> Linkedin</a></li> <br>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
+
 </html>
